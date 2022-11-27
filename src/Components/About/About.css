@@ -1,0 +1,60 @@
+#About
+{   display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 100vw;
+    min-height: 60vh;
+    background-color: var(--bbg);
+}
+#About>*
+{
+    margin: 20px auto;
+    max-width: 900px;
+    font-weight: 400;
+    text-align: center;
+}
+.bio
+{  
+    font-family: "Dune-Rise";
+    font-weight: 800;
+    font-size: 48px;
+    background-color: transparent;
+}
+.detail
+{
+    font-size: 24px;
+    overflow-wrap:normal;
+    background-color: transparent;
+}
+#About:hover .bio
+{
+    animation-name: slide;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+#About:hover .detail
+{
+    animation-name: slide;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slide{
+    0%
+    {
+        position: relative;
+        top: 0px;
+    }
+    50%
+    {
+        position: relative;
+        top: 20px;
+    }
+    100%
+    {
+        position: relative;
+        top: 0px;
+    }
+    
+}

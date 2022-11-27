@@ -1,0 +1,17 @@
+.fab
+{
+    position: fixed;
+    text-align: center;
+    font-size: 36px;
+    padding-top: 10px;
+    bottom: 10px;
+    right: 10px;
+    width: 58px;
+    height: 48px;
+    background-color: white;
+    color: var(--bg);
+    box-shadow:0px 0px 10px var(-sbg) ;
+    border-radius: 50%;
+    font-weight: 100;
+   
+}

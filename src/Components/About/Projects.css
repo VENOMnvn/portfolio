@@ -1,0 +1,20 @@
+.title
+{
+    margin: 0px auto;
+    margin-top: 0px;
+    padding-top: 50px;
+    text-align: center;
+    font-family: "Dune-Rise";
+}
+.Projects
+{
+    background-color: var(--sbg);
+    color: white;
+    padding-bottom:30px;
+}
+.sub-title
+{
+    margin: auto;
+    text-align: center;
+    margin-bottom: 80px;
+}

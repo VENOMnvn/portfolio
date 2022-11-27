@@ -1,0 +1,281 @@
+nav
+{
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   font-size: 32px;
+   top: 0px;
+   
+   background-color: var(--bg);
+
+   width: 100%;
+   /* border: 1px solid red; */
+   color: var(--fntclr);
+   position: fixed;
+   top: 0px;
+   z-index: 20;
+}
+
+.logo
+{
+    box-sizing: border-box;
+}
+.logo>img
+{
+   
+    width: 48px;
+    height: 48px;
+}
+.icons  i
+{
+    margin: 15px;
+    transition: all 0.5s ;
+    /* filter: invert(); */
+}
+.icons a
+{
+    color: white;
+    
+}
+.icons  i:hover
+{
+    color: var(--sbg);
+    transform: scale(1.5);
+    color: rgb(2, 181, 216);
+    text-shadow: 0px 0px 5px rgb(32, 218, 255);
+}
+
+
+.moon
+{
+    display: none;
+    z-index: 16;
+    border: 2px solid white;
+    padding: 2px 10px;
+}
+.sun
+{
+    color: white;
+    z-index: 16;
+}
+.changeTheme:hover
+{
+    background-color: white;
+    color: black;
+}
+.changeTheme
+{
+    border: 2px solid white;
+    padding: 2px 10px;
+    font-size: 24px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+
+@media screen and (width<500px){
+    .icons>i
+    {
+        margin: 5px;
+    }
+    
+}
+
+
+
+
+/* Hamburger */
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    display: none;
+    padding: 0;
+  }
+  .menu > li {
+    margin: 0 1rem;
+    overflow: hidden;
+  }
+  .menu-c
+  {
+    position: absolute;
+    top: 15px;
+    right: 60px;
+  }
+  .menu-button-container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #menu-toggle {
+    display: none;
+  }
+  
+  .menu-button,
+  .menu-button::before,
+  .menu-button::after {
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+  }
+  
+  .menu-button::before {
+    content: '';
+    margin-top: -8px;
+  }
+  
+  .menu-button::after {
+    content: '';
+    margin-top: 8px;
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button {
+    background: rgba(255, 255, 255, 0);
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+  }
+  
+
+  
+  @media (max-width: 700px) {
+    .menu-button-container {
+      display: flex;
+    }
+    .menu {
+      display: flex;  
+      position: absolute;
+      top: 0;
+      margin-top: 50px;
+      left: 0;
+      flex-direction: column;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #menu-toggle ~ .menu li {
+      height: 0;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    #menu-toggle:checked ~ .menu li {
+      border: 1px solid #333;
+      height: 2.5em;
+      padding: 0.5em;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    .menu > li {
+      display: flex;
+      justify-content: center;
+      margin: auto;
+      padding: 0.5em 0;
+      width: 90%;
+      z-index: 20;
+      color: white;
+      /* background-color:var(--sbg); */
+      backdrop-filter: blur(10px);
+    }
+    .menu > li:not(:last-child) {
+      border-bottom: 1px solid rgb(255, 255, 255);
+    }
+    .menu > li > a
+    {
+        color: white;
+        text-decoration: none;
+        display: flex;
+        justify-content: space-around;
+    }
+   
+    .switch
+    {
+        display:none;
+    }
+    .icons{
+        display:none;
+    }
+    .changeTheme
+    {
+        border: none;
+    }
+
+    .changeTheme
+    {
+        font-size: inherit;
+    }
+    .scr
+    {
+        position: absolute;
+        bottom: -50px;
+        left: 10px;
+        display: none;
+    }
+  
+    .img
+    {
+        border-bottom: 2px solid white;
+    }
+    .detail
+    {
+        font-size: initial;
+        margin: 10px;
+        word-wrap: normal;    
+    }
+    #Projects
+    {
+        font-family: "Dune-Rise";
+    }
+    .links-to-page
+    {
+      justify-content: center ; 
+    }
+    .web
+    {
+      width: auto;
+      font-size: 24px;
+      margin: 5px;
+      word-wrap: normal;
+      display: flex;
+      flex-wrap: wrap;
+      min-width: 200px;
+    }
+    .circles
+    {
+      width: 100%;
+      margin-left: 0px;
+      padding: 0px;
+    }
+    .nvnchaudhary
+    {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      gap: 15px;
+    }
+    img
+    {
+      width: 100%;
+    }
+
+  }

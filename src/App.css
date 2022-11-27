@@ -1,0 +1,108 @@
+@font-face {
+    font-family:"Dune-Rise" ;
+    src: url("Dune_Rise.otf");
+}
+@font-face {
+    font-family: "naveen";
+    src: url("Aquatico-Regular.otf");
+}
+@font-face {
+    font-family: "venom";
+    src: url("MUNICH-SANS.ttf");
+}
+html
+{
+    scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+body{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    }
+
+
+body{
+    overflow-x: hidden;
+    background-color: var(--bbg);
+}
+:root {
+    --bg: rgb(13, 19, 39);
+    --fntclr : white ;
+    --bbg:rgb(198, 202, 221);
+    --sbg : rgb(30, 45, 95);
+      }
+
+*
+{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+
+}
+.Loader
+{    
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.316);
+    top: 0px;
+    width: 100vw;
+    height: 100Vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sun
+{
+    border: 2px solid white;
+    padding: 0px 10px;
+    font-size: 1.5rem;
+    margin-top: 5px;
+}
+.Loader img
+{
+    border-radius:50%;
+    margin: auto;
+    width: 20vw;
+    max-width: 100px;
+    max-height: 100px;
+    height: 20vw;
+    background-color: white;
+    animation-name: blink;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes blink{
+    0%
+    {
+        opacity: 0.8;
+    }
+    25%
+    {
+        opacity: 0.5;
+    }
+    50%
+    {
+        opacity: 0.8;
+    }
+    65%
+    {
+        opacity: 0.5;
+    }
+    75%
+    {
+         opacity:1;
+         /* transform: translateY(-10px);
+         transform: scale(0.5); */
+    }
+    99%
+    {
+        /* transform: translateY(-150px) scale(0.1); */
+    }
+    100%
+    {
+        display: none;
+    }
+    
+}

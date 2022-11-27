@@ -1,0 +1,123 @@
+.cardCont
+{
+    margin:10px;
+}
+.card
+{
+    background-color: #eee;
+    color: #333;
+    margin: auto;
+    background-color: var(--bg);
+    color: white;
+}
+.card_publication
+{
+    position: relative;
+    height: 20rem;
+    /* max-width: 400px; */
+    
+    overflow: hidden;
+}
+
+.card_publication img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .5s;
+}
+
+.card:hover .card_publication img
+{
+    transform: scale(1.3);
+}
+
+.card_publication>div{
+    /* background: linear-gradient(to right bottom , rgba(255 , 119 , 48 , .8), rgba(255,185,0,.8) ); */
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    inset: 0;
+    padding: 1rem;
+}
+
+
+.card_publication i 
+{
+    margin-right: 1rem;
+}
+
+.card_publication span
+{
+    display: block;
+}
+
+.card_author
+{
+    margin-bottom: .5rem;
+}
+.card_info
+{
+    position: relative;
+    padding: 2rem 3rem;
+   
+}
+.card_title
+{
+    font-size: 3rem;
+}
+.card_subtitle
+{
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #a2a2a2;
+    margin-bottom: 1rem;
+}
+
+.card_cta
+{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top:2rem;
+}
+.card_cta span{
+    display: inherit;
+    transition: transform .5s;
+}
+.card_cta:hover span{
+    transform: translateX(.5rem);
+}
+
+@media screen and (min-width:40.5rem){
+    .card {
+        display: grid;
+        grid-auto-flow: column;
+        max-width: 75rem;
+    }
+    .card_publication
+    {
+        width: 25rem;
+        height: initial;
+    }
+    
+}
+
+.showProject
+{
+    border:2px solid white;
+    color: white;
+    background-color: transparent;
+    font-size: 1.5rem;
+    padding: 5px 10px; 
+}
+.showProject:hover
+{
+    background-color: white;
+    color:var(--bg);
+    border-color: var(--sbg);
+}

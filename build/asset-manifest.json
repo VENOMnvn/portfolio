@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1971e383.css",
+    "main.js": "/static/js/main.1310eb3b.js",
+    "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
+    "static/media/Developer.png": "/static/media/Developer.988b3626e0011461eee2.png",
+    "static/media/Project-2.jpg": "/static/media/Project-2.169bfce2914e1336a1f1.jpg",
+    "static/media/Project-3.jpg": "/static/media/Project-3.6808d3b21ef8f587cbe7.jpg",
+    "static/media/Project-1.jpg": "/static/media/Project-1.9d00cd58bbc5cfe39152.jpg",
+    "static/media/bootstrap-icons.jpg": "/static/media/bootstrap-icons.c709e1861e0a354c49e1.jpg",
+    "static/media/react.jpg": "/static/media/react.ee9778e292b21df7dc4d.jpg",
+    "static/media/redux-cover-imgage.jpg": "/static/media/redux-cover-imgage.c93c2cbd065f7e192451.jpg",
+    "static/media/html.webp": "/static/media/html.e46e59769d5b13066c95.webp",
+    "static/media/Dune_Rise.otf": "/static/media/Dune_Rise.364c68a41cdafe1da287.otf",
+    "static/media/MUNICH-SANS.ttf": "/static/media/MUNICH-SANS.1bb16f8892326def0e3d.ttf",
+    "static/media/Aquatico-Regular.otf": "/static/media/Aquatico-Regular.3c5900da6fbd7a2eaa65.otf",
+    "static/media/Logo.png": "/static/media/Logo.48873e852f7f2a84fc21.png",
+    "static/media/2.svg": "/static/media/2.338a090ee37841b43e0b64dea79f0c1b.svg",
+    "index.html": "/index.html",
+    "main.1971e383.css.map": "/static/css/main.1971e383.css.map",
+    "main.1310eb3b.js.map": "/static/js/main.1310eb3b.js.map",
+    "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1971e383.css",
+    "static/js/main.1310eb3b.js"
+  ]
+}
